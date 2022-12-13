@@ -1,5 +1,5 @@
 import { CssBaseline, Container } from "@mui/material";
-import { NavBar, Hero, Footer, Trending, Chart } from "./components";
+import { NavBar, Hero, Footer, Trending, ChartsContainer } from "./components";
 
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 			<Container>
 				<main>
 					<Trending />
-					<Chart />
+					<ChartsContainer />
 					<Hero />
 				</main>
 				<Footer />

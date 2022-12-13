@@ -1,0 +1,50 @@
+@use './media' as *;
+@use './theme' as *;
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    height: 300px;
+
+    .item {
+        border-radius: 16px;
+        
+        &:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background: $secondary200;
+        }
+
+        background: $secondary300;
+    }
+
+    @include respond(tablet) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .item {
+            &:nth-child(1) {
+                background: $secondary100;
+                grid-column-end: 4;
+                grid-row-end: 3
+            }
+        }
+    }
+
+    @include respond(mobile) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .item {
+            &:nth-child(1) {
+                background: $secondary100;
+                grid-column-end: 3;
+                grid-row-end: 3
+            }
+        }
+    }
+}

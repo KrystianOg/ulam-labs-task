@@ -1,6 +1,6 @@
 import { XYPlot, LineSeries } from "react-vis";
-import type { MarketChart } from "../types";
-import marketChartBtc from "../static/market-chart-btc.json";
+import type { MarketChart } from "../../types";
+import marketChartBtc from "../../static/market-chart-btc.json";
 
 const Chart = () => {
 	const chartBtc = (marketChartBtc as MarketChart).prices;
