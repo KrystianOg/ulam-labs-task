@@ -1,0 +1,125 @@
+{
+    "coins": [
+      {
+        "item": {
+          "id": "magic",
+          "coin_id": 18623,
+          "name": "Magic",
+          "symbol": "MAGIC",
+          "market_cap_rank": 175,
+          "thumb": "https://assets.coingecko.com/coins/images/18623/thumb/magic.png?1656052146",
+          "small": "https://assets.coingecko.com/coins/images/18623/small/magic.png?1656052146",
+          "large": "https://assets.coingecko.com/coins/images/18623/large/magic.png?1656052146",
+          "slug": "magic",
+          "price_btc": 0.000044152032081778735,
+          "score": 0
+        }
+      },
+      {
+        "item": {
+          "id": "blank",
+          "coin_id": 14209,
+          "name": "BlockWallet",
+          "symbol": "BLANK",
+          "market_cap_rank": 953,
+          "thumb": "https://assets.coingecko.com/coins/images/14209/thumb/blank.png?1614940842",
+          "small": "https://assets.coingecko.com/coins/images/14209/small/blank.png?1614940842",
+          "large": "https://assets.coingecko.com/coins/images/14209/large/blank.png?1614940842",
+          "slug": "blockwallet",
+          "price_btc": 0.000010215904474461202,
+          "score": 1
+        }
+      },
+      {
+        "item": {
+          "id": "gmx",
+          "coin_id": 18323,
+          "name": "GMX",
+          "symbol": "GMX",
+          "market_cap_rank": 77,
+          "thumb": "https://assets.coingecko.com/coins/images/18323/thumb/arbit.png?1631532468",
+          "small": "https://assets.coingecko.com/coins/images/18323/small/arbit.png?1631532468",
+          "large": "https://assets.coingecko.com/coins/images/18323/large/arbit.png?1631532468",
+          "slug": "gmx",
+          "price_btc": 0.003406874487410994,
+          "score": 2
+        }
+      },
+      {
+        "item": {
+          "id": "usdd",
+          "coin_id": 25380,
+          "name": "USDD",
+          "symbol": "USDD",
+          "market_cap_rank": 57,
+          "thumb": "https://assets.coingecko.com/coins/images/25380/thumb/UUSD.jpg?1651823371",
+          "small": "https://assets.coingecko.com/coins/images/25380/small/UUSD.jpg?1651823371",
+          "large": "https://assets.coingecko.com/coins/images/25380/large/UUSD.jpg?1651823371",
+          "slug": "usdd",
+          "price_btc": 0.00005702642161866782,
+          "score": 3
+        }
+      },
+      {
+        "item": {
+          "id": "binancecoin",
+          "coin_id": 825,
+          "name": "BNB",
+          "symbol": "BNB",
+          "market_cap_rank": 4,
+          "thumb": "https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850",
+          "small": "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png?1644979850",
+          "large": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850",
+          "slug": "bnb",
+          "price_btc": 0.015831277116748543,
+          "score": 4
+        }
+      },
+      {
+        "item": {
+          "id": "ethereum",
+          "coin_id": 279,
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "market_cap_rank": 2,
+          "thumb": "https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880",
+          "small": "https://assets.coingecko.com/coins/images/279/small/ethereum.png?1595348880",
+          "large": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+          "slug": "ethereum",
+          "price_btc": 0.07390994458343415,
+          "score": 5
+        }
+      },
+      {
+        "item": {
+          "id": "solana",
+          "coin_id": 4128,
+          "name": "Solana",
+          "symbol": "SOL",
+          "market_cap_rank": 18,
+          "thumb": "https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422",
+          "small": "https://assets.coingecko.com/coins/images/4128/small/solana.png?1640133422",
+          "large": "https://assets.coingecko.com/coins/images/4128/large/solana.png?1640133422",
+          "slug": "solana",
+          "price_btc": 0.0007684039180557436,
+          "score": 6
+        }
+      },
+      {
+        "item": {
+          "id": "aptos",
+          "coin_id": 26455,
+          "name": "Aptos",
+          "symbol": "APT",
+          "market_cap_rank": 66,
+          "thumb": "https://assets.coingecko.com/coins/images/26455/thumb/aptos_round.png?1666839629",
+          "small": "https://assets.coingecko.com/coins/images/26455/small/aptos_round.png?1666839629",
+          "large": "https://assets.coingecko.com/coins/images/26455/large/aptos_round.png?1666839629",
+          "slug": "aptos",
+          "price_btc": 0.000260746044147077,
+          "score": 7
+        }
+      }
+    ],
+    "exchanges": []
+  }

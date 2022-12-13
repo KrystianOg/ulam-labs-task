@@ -1,0 +1,20 @@
+@use 'theme' as *;
+
+.trending-carousel {
+    display: flex;
+    list-style: none;
+
+    text-align: center;
+    align-items: center;
+
+    li {
+        margin: 1rem;
+        transition: all 0.2s;
+        color: $primary100;
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            color: $primary200;
+        }
+    }
+}

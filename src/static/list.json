@@ -1,0 +1,1012 @@
+[
+    {
+    "id": "01coin",
+    "symbol": "zoc",
+    "name": "01coin"
+  },
+  {
+    "id": "0chain",
+    "symbol": "zcn",
+    "name": "Zus"
+  },
+  {
+    "id": "0x",
+    "symbol": "zrx",
+    "name": "0x"
+  },
+  {
+    "id": "0xcert",
+    "symbol": "zxc",
+    "name": "0xcert"
+  },
+  {
+    "id": "0xdao",
+    "symbol": "oxd",
+    "name": "0xDAO"
+  },
+  {
+    "id": "0xdao-v2",
+    "symbol": "oxd v2",
+    "name": "0xDAO V2"
+  },
+  {
+    "id": "0xmonero",
+    "symbol": "0xmr",
+    "name": "0xMonero"
+  },
+  {
+    "id": "0xpad",
+    "symbol": "0xpad",
+    "name": "0xPAD"
+  },
+  {
+    "id": "0xtrade",
+    "symbol": "0xt",
+    "name": "0xTrade"
+  },
+  {
+    "id": "0xwallet-token",
+    "symbol": "0xw",
+    "name": "0xWallet Token"
+  },
+  {
+    "id": "100-days-ventures",
+    "symbol": "astro",
+    "name": "100 Days Ventures"
+  },
+  {
+    "id": "10mb",
+    "symbol": "10mb",
+    "name": "10mb"
+  },
+  {
+    "id": "10share",
+    "symbol": "10share",
+    "name": "10SHARE"
+  },
+  {
+    "id": "11957-olga",
+    "symbol": "realt-s-11957-olga-st-detroit-mi",
+    "name": "RealT - 11957 Olga St, Detroit, MI 48213"
+  },
+  {
+    "id": "12405-santa-rosa",
+    "symbol": "realt-s-12405-santa-rosa-dr-detroit-mi",
+    "name": "RealT - 12405 Santa Rosa Dr, Detroit, MI 48204"
+  },
+  {
+    "id": "12ships",
+    "symbol": "tshp",
+    "name": "12Ships"
+  },
+  {
+    "id": "1337",
+    "symbol": "1337",
+    "name": "Elite"
+  },
+  {
+    "id": "14066-santa-rosa",
+    "symbol": "realt-s-14066-santa-rosa-dr-detroit-mi",
+    "name": "RealT - 14066 Santa Rosa Dr, Detroit, MI 48238"
+  },
+  {
+    "id": "1617-s-avers",
+    "symbol": "realt-s-1617-s.avers-ave-chicago-il",
+    "name": "RealT - 1617 S Avers Ave, Chicago, IL 60623"
+  },
+  {
+    "id": "1815-s-avers",
+    "symbol": "realt-s-1815-s.avers-ave-chicago-il",
+    "name": "RealT - 1815 S Avers Ave, Chicago, IL 60623"
+  },
+  {
+    "id": "1art",
+    "symbol": "1art",
+    "name": "OneArt"
+  },
+  {
+    "id": "1bch",
+    "symbol": "1bch",
+    "name": "1BCH"
+  },
+  {
+    "id": "1box",
+    "symbol": "1box",
+    "name": "1BOX"
+  },
+  {
+    "id": "1doge",
+    "symbol": "1doge",
+    "name": "1Doge"
+  },
+  {
+    "id": "1-dollar",
+    "symbol": "oneusd",
+    "name": "1 Dollar"
+  },
+  {
+    "id": "1eco",
+    "symbol": "1eco",
+    "name": "1eco"
+  },
+  {
+    "id": "1eth",
+    "symbol": "1eth",
+    "name": "1ETH"
+  },
+  {
+    "id": "1hive-water",
+    "symbol": "water",
+    "name": "1Hive Water"
+  },
+  {
+    "id": "1inch",
+    "symbol": "1inch",
+    "name": "1inch"
+  },
+  {
+    "id": "1million-nfts",
+    "symbol": "1mil",
+    "name": "1MillionNFTs"
+  },
+  {
+    "id": "1million-token",
+    "symbol": "1mt",
+    "name": "1Million"
+  },
+  {
+    "id": "1move token",
+    "symbol": "1mt",
+    "name": "1Move Token"
+  },
+  {
+    "id": "1peco",
+    "symbol": "1peco",
+    "name": "1peco"
+  },
+  {
+    "id": "1reward-token",
+    "symbol": "1rt",
+    "name": "1Reward Token"
+  },
+  {
+    "id": "1safu",
+    "symbol": "safu",
+    "name": "1SAFU"
+  },
+  {
+    "id": "1sol",
+    "symbol": "1sol",
+    "name": "1Sol"
+  },
+  {
+    "id": "1sol-io-wormhole",
+    "symbol": "1sol",
+    "name": "1sol.io (Wormhole)"
+  },
+  {
+    "id": "1tronic",
+    "symbol": "1trc",
+    "name": "1TRONIC"
+  },
+  {
+    "id": "1-up",
+    "symbol": "1-up",
+    "name": "1-UP"
+  },
+  {
+    "id": "1world",
+    "symbol": "1wo",
+    "name": "1World"
+  },
+  {
+    "id": "1x-long-btc-implied-volatility-token",
+    "symbol": "bvol",
+    "name": "Bitcoin Volatility Token"
+  },
+  {
+    "id": "1x-short-btc-implied-volatility",
+    "symbol": "ibvol",
+    "name": "Inverse Bitcoin Volatility"
+  },
+  {
+    "id": "2044-nuclear-apocalypse",
+    "symbol": "2044",
+    "name": "2044 Nuclear Apocalypse"
+  },
+  {
+    "id": "20weth-80bal",
+    "symbol": "20weth-80bal",
+    "name": "20WETH-80BAL"
+  },
+  {
+    "id": "28vck",
+    "symbol": "vck",
+    "name": "28VCK"
+  },
+  {
+    "id": "2acoin",
+    "symbol": "arms",
+    "name": "2ACoin"
+  },
+  {
+    "id": "2crazynft",
+    "symbol": "2crz",
+    "name": "2crazyNFT"
+  },
+  {
+    "id": "2gather",
+    "symbol": "two",
+    "name": "2gather"
+  },
+  {
+    "id": "2g-carbon-coin",
+    "symbol": "2gcc",
+    "name": "2G Carbon Coin"
+  },
+  {
+    "id": "2gether-2",
+    "symbol": "2gt",
+    "name": "2gether"
+  },
+  {
+    "id": "2key",
+    "symbol": "2key",
+    "name": "2key.network"
+  },
+  {
+    "id": "2local-2",
+    "symbol": "2lc",
+    "name": "2local"
+  },
+  {
+    "id": "2omb-finance",
+    "symbol": "2omb",
+    "name": "2omb"
+  },
+  {
+    "id": "2share",
+    "symbol": "2shares",
+    "name": "2SHARE"
+  },
+  {
+    "id": "300fit",
+    "symbol": "fit",
+    "name": "300FIT"
+  },
+  {
+    "id": "30mb-token",
+    "symbol": "3omb",
+    "name": "3OMB"
+  },
+  {
+    "id": "37protocol",
+    "symbol": "37c",
+    "name": "37Protocol"
+  },
+  {
+    "id": "3air",
+    "symbol": "3air",
+    "name": "3air"
+  },
+  {
+    "id": "3gg",
+    "symbol": "3gg",
+    "name": "3gg"
+  },
+  {
+    "id": "3qt",
+    "symbol": "3qt",
+    "name": "3QT"
+  },
+  {
+    "id": "3shares",
+    "symbol": "3share",
+    "name": "3Share"
+  },
+  {
+    "id": "3xcalibur",
+    "symbol": "xcal",
+    "name": "3xcalibur Ecosystem Token"
+  },
+  {
+    "id": "42-coin",
+    "symbol": "42",
+    "name": "42-coin"
+  },
+  {
+    "id": "4852-4854-w-cortez",
+    "symbol": "realt-s-4852-4854-w.cortez-st-chicago-il",
+    "name": "RealT - 4852-4854 W Cortez St, Chicago, IL 60651"
+  },
+  {
+    "id": "4artechnologies",
+    "symbol": "4art",
+    "name": "4ART Coin"
+  },
+  {
+    "id": "4d-twin-maps",
+    "symbol": "map",
+    "name": "4D Twin Maps"
+  },
+  {
+    "id": "4int",
+    "symbol": "4int",
+    "name": "4INT"
+  },
+  {
+    "id": "4jnet",
+    "symbol": "4jnet",
+    "name": "4JNET"
+  },
+  {
+    "id": "4mw",
+    "symbol": "4mw",
+    "name": "4 Meta World"
+  },
+  {
+    "id": "4new",
+    "symbol": "kwatt",
+    "name": "4New"
+  },
+  {
+    "id": "4play",
+    "symbol": "4play",
+    "name": "4PLAY"
+  },
+  {
+    "id": "4-stock",
+    "symbol": "4stc",
+    "name": "4-Stock"
+  },
+  {
+    "id": "50cent",
+    "symbol": "50c",
+    "name": "50Cent"
+  },
+  {
+    "id": "5g-cash",
+    "symbol": "vgc",
+    "name": "5G-CASH"
+  },
+  {
+    "id": "5km-run",
+    "symbol": "run",
+    "name": "5KM RUN"
+  },
+  {
+    "id": "73c9fc57-af8f-4bd8-935f-de69a853598d",
+    "symbol": "mbtc",
+    "name": "메타비트코인"
+  },
+  {
+    "id": "7pixels",
+    "symbol": "7pxs",
+    "name": "7Pixels"
+  },
+  {
+    "id": "7up",
+    "symbol": "7up",
+    "name": "7up"
+  },
+  {
+    "id": "888tron",
+    "symbol": "888",
+    "name": "888tron"
+  },
+  {
+    "id": "88mph",
+    "symbol": "mph",
+    "name": "88mph"
+  },
+  {
+    "id": "8bit-doge",
+    "symbol": "bitd",
+    "name": "8Bit Doge"
+  },
+  {
+    "id": "8pay",
+    "symbol": "8pay",
+    "name": "8Pay"
+  },
+  {
+    "id": "8x8-protocol",
+    "symbol": "exe",
+    "name": "8X8 Protocol"
+  },
+  {
+    "id": "99defi",
+    "symbol": "99defi",
+    "name": "99Defi"
+  },
+  {
+    "id": "99starz",
+    "symbol": "stz",
+    "name": "99Starz"
+  },
+  {
+    "id": "a4-finance",
+    "symbol": "a4",
+    "name": "A4 Finance"
+  },
+  {
+    "id": "aada-finance",
+    "symbol": "aada",
+    "name": "Aada Finance"
+  },
+  {
+    "id": "aag-ventures",
+    "symbol": "aag",
+    "name": "AAG"
+  },
+  {
+    "id": "aananaapegarden",
+    "symbol": "bag",
+    "name": "BananaApeGarden"
+  },
+  {
+    "id": "aarma",
+    "symbol": "arma",
+    "name": "Aarma"
+  },
+  {
+    "id": "aave",
+    "symbol": "aave",
+    "name": "Aave"
+  },
+  {
+    "id": "aave-aave",
+    "symbol": "aaave",
+    "name": "Aave AAVE"
+  },
+  {
+    "id": "aave-amm-bptbalweth",
+    "symbol": "aammbptbalweth",
+    "name": "Aave AMM BptBALWETH"
+  },
+  {
+    "id": "aave-amm-bptwbtcweth",
+    "symbol": "aammbptwbtcweth",
+    "name": "Aave AMM BptWBTCWETH"
+  },
+  {
+    "id": "aave-amm-dai",
+    "symbol": "aammdai",
+    "name": "Aave AMM DAI"
+  },
+  {
+    "id": "aave-amm-uniaaveweth",
+    "symbol": "aammuniaaveweth",
+    "name": "Aave AMM UniAAVEWETH"
+  },
+  {
+    "id": "aave-amm-unibatweth",
+    "symbol": "aammunibatweth",
+    "name": "Aave AMM UniBATWETH"
+  },
+  {
+    "id": "aave-amm-unicrvweth",
+    "symbol": "aammunicrvweth",
+    "name": "Aave AMM UniCRVWETH"
+  },
+  {
+    "id": "aave-amm-unidaiusdc",
+    "symbol": "aammunidaiusdc",
+    "name": "Aave AMM UniDAIUSDC"
+  },
+  {
+    "id": "aave-amm-unidaiweth",
+    "symbol": "aammunidaiweth",
+    "name": "Aave AMM UniDAIWETH"
+  },
+  {
+    "id": "aave-amm-unilinkweth",
+    "symbol": "aammunilinkweth",
+    "name": "Aave AMM UniLINKWETH"
+  },
+  {
+    "id": "aave-amm-unimkrweth",
+    "symbol": "aammunimkrweth",
+    "name": "Aave AMM UniMKRWETH"
+  },
+  {
+    "id": "aave-amm-unirenweth",
+    "symbol": "aammunirenweth",
+    "name": "Aave AMM UniRENWETH"
+  },
+  {
+    "id": "aave-amm-unisnxweth",
+    "symbol": "aammunisnxweth",
+    "name": "Aave AMM UniSNXWETH"
+  },
+  {
+    "id": "aave-amm-uniuniweth",
+    "symbol": "aammuniuniweth",
+    "name": "Aave AMM UniUNIWETH"
+  },
+  {
+    "id": "aave-amm-uniusdcweth",
+    "symbol": "aammuniusdcweth",
+    "name": "Aave AMM UniUSDCWETH"
+  },
+  {
+    "id": "aave-amm-uniwbtcusdc",
+    "symbol": "aammuniwbtcusdc",
+    "name": "Aave AMM UniWBTCUSDC"
+  },
+  {
+    "id": "aave-amm-uniwbtcweth",
+    "symbol": "aammuniwbtcweth",
+    "name": "Aave AMM UniWBTCWETH"
+  },
+  {
+    "id": "aave-amm-uniyfiweth",
+    "symbol": "aammuniyfiweth",
+    "name": "Aave AMM UniYFIWETH"
+  },
+  {
+    "id": "aave-amm-usdc",
+    "symbol": "aammusdc",
+    "name": "Aave AMM USDC"
+  },
+  {
+    "id": "aave-amm-usdt",
+    "symbol": "aammusdt",
+    "name": "Aave AMM USDT"
+  },
+  {
+    "id": "aave-amm-wbtc",
+    "symbol": "aammwbtc",
+    "name": "Aave AMM WBTC"
+  },
+  {
+    "id": "aave-amm-weth",
+    "symbol": "aammweth",
+    "name": "Aave AMM WETH"
+  },
+  {
+    "id": "aave-bal",
+    "symbol": "abal",
+    "name": "Aave BAL"
+  },
+  {
+    "id": "aave-balancer-pool-token",
+    "symbol": "abpt",
+    "name": "Aave Balancer Pool Token"
+  },
+  {
+    "id": "aave-bat",
+    "symbol": "abat",
+    "name": "Aave BAT"
+  },
+  {
+    "id": "aave-bat-v1",
+    "symbol": "abat",
+    "name": "Aave BAT v1"
+  },
+  {
+    "id": "aave-busd",
+    "symbol": "abusd",
+    "name": "Aave BUSD"
+  },
+  {
+    "id": "aave-busd-v1",
+    "symbol": "abusd",
+    "name": "Aave BUSD v1"
+  },
+  {
+    "id": "aave-crv",
+    "symbol": "acrv",
+    "name": "Aave CRV"
+  },
+  {
+    "id": "aave-dai",
+    "symbol": "adai",
+    "name": "Aave DAI"
+  },
+  {
+    "id": "aave-dai-v1",
+    "symbol": "adai",
+    "name": "Aave DAI v1"
+  },
+  {
+    "id": "aave-enj",
+    "symbol": "aenj",
+    "name": "Aave ENJ"
+  },
+  {
+    "id": "aave-enj-v1",
+    "symbol": "aenj",
+    "name": "Aave ENJ v1"
+  },
+  {
+    "id": "aave-eth-v1",
+    "symbol": "aeth",
+    "name": "Aave ETH v1"
+  },
+  {
+    "id": "aavegotchi",
+    "symbol": "ghst",
+    "name": "Aavegotchi"
+  },
+  {
+    "id": "aavegotchi-alpha",
+    "symbol": "alpha",
+    "name": "Aavegotchi ALPHA"
+  },
+  {
+    "id": "aavegotchi-fomo",
+    "symbol": "fomo",
+    "name": "Aavegotchi FOMO"
+  },
+  {
+    "id": "aavegotchi-fud",
+    "symbol": "fud",
+    "name": "Aavegotchi FUD"
+  },
+  {
+    "id": "aavegotchi-kek",
+    "symbol": "kek",
+    "name": "Aavegotchi KEK"
+  },
+  {
+    "id": "aave-gusd",
+    "symbol": "agusd",
+    "name": "Aave GUSD"
+  },
+  {
+    "id": "aave-interest-bearing-steth",
+    "symbol": "asteth",
+    "name": "Aave Interest Bearing STETH"
+  },
+  {
+    "id": "aave-knc",
+    "symbol": "aknc",
+    "name": "Aave KNC"
+  },
+  {
+    "id": "aave-knc-v1",
+    "symbol": "aknc",
+    "name": "Aave KNC v1"
+  },
+  {
+    "id": "aave-link",
+    "symbol": "alink",
+    "name": "Aave LINK"
+  },
+  {
+    "id": "aave-link-v1",
+    "symbol": "alink",
+    "name": "Aave LINK v1"
+  },
+  {
+    "id": "aave-mana",
+    "symbol": "amana",
+    "name": "Aave MANA"
+  },
+  {
+    "id": "aave-mana-v1",
+    "symbol": "amana",
+    "name": "Aave MANA v1"
+  },
+  {
+    "id": "aave-mkr",
+    "symbol": "amkr",
+    "name": "Aave MKR"
+  },
+  {
+    "id": "aave-mkr-v1",
+    "symbol": "amkr",
+    "name": "Aave MKR v1"
+  },
+  {
+    "id": "aave-polygon-aave",
+    "symbol": "amaave",
+    "name": "Aave Polygon AAVE"
+  },
+  {
+    "id": "aave-polygon-dai",
+    "symbol": "amdai",
+    "name": "Aave Polygon DAI"
+  },
+  {
+    "id": "aave-polygon-usdc",
+    "symbol": "amusdc",
+    "name": "Aave Polygon USDC"
+  },
+  {
+    "id": "aave-polygon-usdt",
+    "symbol": "amusdt",
+    "name": "Aave Polygon USDT"
+  },
+  {
+    "id": "aave-polygon-wbtc",
+    "symbol": "amwbtc",
+    "name": "Aave Polygon WBTC"
+  },
+  {
+    "id": "aave-polygon-weth",
+    "symbol": "amweth",
+    "name": "Aave Polygon WETH"
+  },
+  {
+    "id": "aave-polygon-wmatic",
+    "symbol": "amwmatic",
+    "name": "Aave Polygon WMATIC"
+  },
+  {
+    "id": "aave-rai",
+    "symbol": "arai",
+    "name": "Aave RAI"
+  },
+  {
+    "id": "aave-ren",
+    "symbol": "aren",
+    "name": "Aave REN"
+  },
+  {
+    "id": "aave-ren-v1",
+    "symbol": "aren",
+    "name": "Aave REN v1"
+  },
+  {
+    "id": "aave-snx",
+    "symbol": "asnx",
+    "name": "Aave SNX"
+  },
+  {
+    "id": "aave-snx-v1",
+    "symbol": "asnx",
+    "name": "Aave SNX v1"
+  },
+  {
+    "id": "aave-susd",
+    "symbol": "asusd",
+    "name": "Aave SUSD"
+  },
+  {
+    "id": "aave-susd-v1",
+    "symbol": "asusd",
+    "name": "Aave SUSD v1"
+  },
+  {
+    "id": "aave-tusd",
+    "symbol": "atusd",
+    "name": "Aave TUSD"
+  },
+  {
+    "id": "aave-tusd-v1",
+    "symbol": "atusd",
+    "name": "Aave TUSD v1"
+  },
+  {
+    "id": "aave-uni",
+    "symbol": "auni",
+    "name": "Aave UNI"
+  },
+  {
+    "id": "aave-usdc",
+    "symbol": "ausdc",
+    "name": "Aave USDC"
+  },
+  {
+    "id": "aave-usdc-v1",
+    "symbol": "ausdc",
+    "name": "Aave USDC v1"
+  },
+  {
+    "id": "aave-usdt",
+    "symbol": "ausdt",
+    "name": "Aave USDT"
+  },
+  {
+    "id": "aave-usdt-v1",
+    "symbol": "ausdt",
+    "name": "Aave USDT v1"
+  },
+  {
+    "id": "aave-wbtc",
+    "symbol": "awbtc",
+    "name": "Aave WBTC"
+  },
+  {
+    "id": "aave-wbtc-v1",
+    "symbol": "awbtc",
+    "name": "Aave WBTC v1"
+  },
+  {
+    "id": "aave-weth",
+    "symbol": "aweth",
+    "name": "Aave WETH"
+  },
+  {
+    "id": "aave-wormhole",
+    "symbol": "aave",
+    "name": "Aave (Wormhole)"
+  },
+  {
+    "id": "aave-xsushi",
+    "symbol": "axsushi",
+    "name": "Aave XSUSHI"
+  },
+  {
+    "id": "aave-yfi",
+    "symbol": "ayfi",
+    "name": "Aave YFI"
+  },
+  {
+    "id": "aave-zrx",
+    "symbol": "azrx",
+    "name": "Aave ZRX"
+  },
+  {
+    "id": "aave-zrx-v1",
+    "symbol": "azrx",
+    "name": "Aave ZRX v1"
+  },
+  {
+    "id": "aax-token",
+    "symbol": "aab",
+    "name": "AAX"
+  },
+  {
+    "id": "abachi",
+    "symbol": "abi",
+    "name": "Abachi"
+  },
+  {
+    "id": "abcc-token",
+    "symbol": "at",
+    "name": "ABCC"
+  },
+  {
+    "id": "abc-floor-index",
+    "symbol": "abc",
+    "name": "ABC Floor Index"
+  },
+  {
+    "id": "abcmeta",
+    "symbol": "meta",
+    "name": "ABCMETA"
+  },
+  {
+    "id": "abeatsheroenhencement",
+    "symbol": "ahe",
+    "name": "AbeatsHeroEnhencement"
+  },
+  {
+    "id": "abell-coin",
+    "symbol": "abc",
+    "name": "Abell Coin"
+  },
+  {
+    "id": "abey",
+    "symbol": "abey",
+    "name": "Abey"
+  },
+  {
+    "id": "able-finance",
+    "symbol": "able",
+    "name": "Able Finance"
+  },
+  {
+    "id": "aboat-token",
+    "symbol": "aboat",
+    "name": "Aboat Token"
+  },
+  {
+    "id": "absolute-sync-token",
+    "symbol": "ast",
+    "name": "Absolute Sync"
+  },
+  {
+    "id": "acala",
+    "symbol": "aca",
+    "name": "Acala"
+  },
+  {
+    "id": "acala-dollar",
+    "symbol": "ausd",
+    "name": "Acala Dollar (Karura)"
+  },
+  {
+    "id": "acala-dollar-acala",
+    "symbol": "ausd",
+    "name": "Acala Dollar (Acala)"
+  },
+  {
+    "id": "aca-token",
+    "symbol": "aca",
+    "name": "ACA"
+  },
+  {
+    "id": "accel-defi",
+    "symbol": "accel",
+    "name": "Accel Defi"
+  },
+  {
+    "id": "accesslauncher",
+    "symbol": "acx",
+    "name": "AccessLauncher"
+  },
+  {
+    "id": "accumulate",
+    "symbol": "acme",
+    "name": "Accumulate"
+  },
+  {
+    "id": "ace-cash",
+    "symbol": "acec",
+    "name": "Ace Cash"
+  },
+  {
+    "id": "aced",
+    "symbol": "aced",
+    "name": "Aced [OLD]"
+  },
+  {
+    "id": "acent",
+    "symbol": "ace",
+    "name": "Acent"
+  },
+  {
+    "id": "acestarter",
+    "symbol": "astar",
+    "name": "AceStarter"
+  },
+  {
+    "id": "acetoken",
+    "symbol": "ace",
+    "name": "ACEToken"
+  },
+  {
+    "id": "acet-token",
+    "symbol": "act",
+    "name": "Acet"
+  },
+  {
+    "id": "ac-exchange-token",
+    "symbol": "acxt",
+    "name": "ACDX Exchange"
+  },
+  {
+    "id": "achain",
+    "symbol": "act",
+    "name": "Achain"
+  },
+  {
+    "id": "acknoledger",
+    "symbol": "ack",
+    "name": "AcknoLedger"
+  },
+  {
+    "id": "ac-milan-fan-token",
+    "symbol": "acm",
+    "name": "AC Milan Fan Token"
+  },
+  {
+    "id": "acoconut",
+    "symbol": "ac",
+    "name": "ACoconut"
+  },
+  {
+    "id": "acoin",
+    "symbol": "acoin",
+    "name": "Acoin"
+  },
+  {
+    "id": "acquire-fi",
+    "symbol": "acq",
+    "name": "Acquire.Fi"
+  },
+  {
+    "id": "acreage-coin",
+    "symbol": "acr",
+    "name": "Acreage Coin"
+  },
+  {
+    "id": "across-protocol",
+    "symbol": "acx",
+    "name": "Across Protocol"
+  }
+]

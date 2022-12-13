@@ -1,0 +1,94 @@
+{
+    "coins": [
+        {
+            "id": "bitcoin",
+            "name": "Bitcoin",
+            "api_symbol": "bitcoin",
+            "symbol": "BTC",
+            "market_cap_rank": 1,
+            "thumb": "https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png",
+            "large": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
+        },
+        {
+            "id": "ethereum",
+            "name": "Ethereum",
+            "api_symbol": "ethereum",
+            "symbol": "ETH",
+            "market_cap_rank": 2,
+            "thumb": "https://assets.coingecko.com/coins/images/279/thumb/ethereum.png",
+            "large": "https://assets.coingecko.com/coins/images/279/large/ethereum.png"
+        },
+        {
+            "id": "solana",
+            "name": "Solana",
+            "api_symbol": "solana",
+            "symbol": "SOL",
+            "market_cap_rank": 18,
+            "thumb": "https://assets.coingecko.com/coins/images/4128/thumb/solana.png",
+            "large": "https://assets.coingecko.com/coins/images/4128/large/solana.png"
+        },
+        {
+            "id": "cardano",
+            "name": "Cardano",
+            "api_symbol": "cardano",
+            "symbol": "ADA",
+            "market_cap_rank": 9,
+            "thumb": "https://assets.coingecko.com/coins/images/975/thumb/cardano.png",
+            "large": "https://assets.coingecko.com/coins/images/975/large/cardano.png"
+        },
+        {
+            "id": "tether",
+            "name": "Tether",
+            "api_symbol": "tether",
+            "symbol": "USDT",
+            "market_cap_rank": 3,
+            "thumb": "https://assets.coingecko.com/coins/images/325/thumb/Tether.png",
+            "large": "https://assets.coingecko.com/coins/images/325/large/Tether.png"
+        },
+        {
+            "id": "binancecoin",
+            "name": "BNB",
+            "api_symbol": "binancecoin",
+            "symbol": "BNB",
+            "market_cap_rank": 4,
+            "thumb": "https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png",
+            "large": "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png"
+        },
+        {
+            "id": "usd-coin",
+            "name": "USD Coin",
+            "api_symbol": "usd-coin",
+            "symbol": "USDC",
+            "market_cap_rank": 5,
+            "thumb": "https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png",
+            "large": "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png"
+        },
+        {
+            "id": "binance-usd",
+            "name": "Binance USD",
+            "api_symbol": "binance-usd",
+            "symbol": "BUSD",
+            "market_cap_rank": 6,
+            "thumb": "https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png",
+            "large": "https://assets.coingecko.com/coins/images/9576/large/BUSD.png"
+        },
+        {
+            "id": "ripple",
+            "name": "XRP",
+            "api_symbol": "ripple",
+            "symbol": "XRP",
+            "market_cap_rank": 7,
+            "thumb": "https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png",
+            "large": "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png"
+        },
+        {
+            "id": "dogecoin",
+            "name": "Dogecoin",
+            "api_symbol": "dogecoin",
+            "symbol": "DOGE",
+            "market_cap_rank": 8,
+            "thumb": "https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png",
+            "large": "https://assets.coingecko.com/coins/images/5/large/dogecoin.png"
+        }
+    ]
+}
