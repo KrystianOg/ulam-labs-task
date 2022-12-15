@@ -1,10 +1,12 @@
+import "../styles/coingecko.scss";
+
 const CoinGecko = () => {
 	return (
-		<div>
-			<h4>
+		<div className="coingecko">
+			<h5>
 				Powered by
 				<a href="https://www.coingecko.com/pl/api">CoinGecko API</a>
-			</h4>
+			</h5>
 		</div>
 	);
 };

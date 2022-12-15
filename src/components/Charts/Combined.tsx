@@ -9,6 +9,7 @@ import {
 import { selectCurrentCoinsIds } from "../../app/coins";
 import { selectAllCoinsMarketData } from "../../app/api";
 import { useAppSelector } from "../../hooks/useStore";
+import { useState } from "react";
 
 interface CombinedProps {
 	display?: "prices" | "market_caps" | "total_volumes";
@@ -16,8 +17,8 @@ interface CombinedProps {
 
 const Combined = ({ display = "prices" }: CombinedProps) => {
 	const ids = useAppSelector(selectCurrentCoinsIds);
-
 	const coins = useAppSelector(selectAllCoinsMarketData(ids));
+	const [points, setPoints] = useState([]);
 
 	if (ids.length === 0) return null;
 
@@ -32,7 +33,6 @@ const Combined = ({ display = "prices" }: CombinedProps) => {
 			>
 				<VerticalGridLines />
 				<HorizontalGridLines />
-				<XAxis />
 				<YAxis title="USD" />
 				{coins.map((coin, index) => {
 					if (!coin) return null;

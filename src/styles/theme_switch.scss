@@ -17,7 +17,6 @@
     }
 }
 
-
 .ThemeToggle {
     appearance: none;
     width: 62px;
@@ -52,7 +51,7 @@
     }
 
     &:checked {
-        background-color: rgba($primary100, 0.5);
+        background-color: rgba($primary200, 0.6);
 
         &::before {
             left: 32px;

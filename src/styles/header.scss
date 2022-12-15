@@ -1,31 +1,28 @@
 @use 'theme' as *;
 @use 'media' as *;
 
-nav {
-    // width: 100vw;
-    // height: 2.5rem;
+header {
+    height: 64px;
     display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    // background: $background;
-    
-    width: 100%;
+    align-items: center;
+    margin: 0.5rem 1rem 0.5rem 2rem;
 
-    @include respond(mobile) {
-        flex-direction: column;
+    .logo-wrapper {
+        display: flex;
+        flex-direction: row;
         align-items: center;
 
-        ul {
-            flex-direction: column;
-            padding-top: 0.5rem;
+        h2 {
+            white-space: nowrap;
+            margin-left: 1.5rem;
+            @include respond(mobile) {
+                display: none;
+            }
         }
-
-        li {
-            padding: 0.5rem 0;
-        }
-    }
-
-    * {
-        margin: auto;
     }
 
     ul {
@@ -49,16 +46,8 @@ nav {
     }
 
     img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 4rem;
+        height: 4rem;
         padding: 0.5rem;
-    }
-}
-
-.no-wrap {
-    white-space: nowrap;
-
-    @include respond(mobile) {
-        display: none;
     }
 }

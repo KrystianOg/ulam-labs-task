@@ -1,0 +1,23 @@
+@use 'media' as *;
+@use 'theme' as *;
+
+$coingecko: hsl(85, 51%, 48%);
+.coingecko {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
+    color: $primary200;
+    @include respond(mobile) {
+        display: none;
+    }
+
+    h5 > a {
+        color: $coingecko;
+        text-decoration: none;
+        transition: all 0.2s;
+        &:hover {
+            color: $primary100;
+        }
+    }
+}

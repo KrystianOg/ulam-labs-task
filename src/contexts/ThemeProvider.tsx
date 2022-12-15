@@ -13,7 +13,7 @@ const getDesignTokens = (isDarkMode: boolean) => ({
             ? {
                 primary: {
                     main: "hsl(309, 77%, 40%)",
-                    dark: "hsl(291, 83%, 37%)",
+                    dark: "hsl(290.06369426751587, 83.06878306878306%, 37.05882352941177%)",
                     light: "hsl(333, 96%, 70%)",
                     contrastText: "#ffffff",
                 },

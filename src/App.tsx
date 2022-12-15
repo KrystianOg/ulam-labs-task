@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CssBaseline, Container } from "@mui/material";
-import { NavBar, Footer, Trending, ChartsContainer } from "./components";
+import { NavBar, Trending, ChartsContainer, CoinGecko } from "./components";
 
 function App() {
 	//for starters check all endpoints
@@ -17,7 +17,7 @@ function App() {
 					<Trending />
 					<ChartsContainer />
 				</main>
-				<Footer />
+				<CoinGecko />
 			</Container>
 		</>
 	);

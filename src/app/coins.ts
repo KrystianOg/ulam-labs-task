@@ -29,6 +29,26 @@ const slice = createSlice({
         },
         removeSearchedCoin: (state, action: PayloadAction<SearchCoin>) => {
             state.currentCoins = state.currentCoins.filter(id => id !== action.payload.id)
+        },
+        setSearchedCoins: (state, action: PayloadAction<SearchCoin[]>) => {
+            if (action.payload.length === 6) throw new Error('Max number of coins reached')
+        
+            if (action.payload.length > state.currentCoins.length || state.currentCoins === null) {
+                // we have to add new coins
+                action.payload.forEach(coin => {
+                    if (!state.currentCoins.includes(coin.id)) {
+                        state.currentCoins.push(coin.id)
+                        state.searchedCoins.push(coin)
+                    }
+
+                    if (state.searchedCoins.length > 25)
+                        state.searchedCoins.shift()
+                })
+            } else {
+                // we have to remove coins
+                state.currentCoins = state.currentCoins.filter(id => action.payload.map(coin => coin.id).includes(id))
+                state.searchedCoins = state.searchedCoins.filter(coin => action.payload.map(coin => coin.id).includes(coin.id))
+            }
         }
     }
 })
@@ -40,5 +60,5 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
     searched.filter(coin => ids.includes(coin.id))
 )
 
-export const { addSearchedCoin, removeSearchedCoin } = slice.actions;
+export const { addSearchedCoin, removeSearchedCoin, setSearchedCoins } = slice.actions;
 export default slice.reducer
