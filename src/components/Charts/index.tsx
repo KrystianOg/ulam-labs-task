@@ -8,11 +8,10 @@ import {
 	FlexibleXYPlot,
 } from "react-vis";
 import { useCoinsMarketChartByIdQuery } from "../../app/api";
-import type { MarketChart, Display, SearchCoin } from "../../types";
+import type { Display, SearchCoin } from "../../types";
 import { useTheme } from "@mui/material/styles";
 
 import "react-vis/dist/style.css";
-import "../../styles/vis.scss";
 import { Tooltip } from "@mui/material";
 interface Props {
 	coin: SearchCoin;
@@ -20,19 +19,11 @@ interface Props {
 }
 
 const Chart = ({ coin, display = "prices" }: Props) => {
-	// add change display for particular chart
 	const [displayType, setDisplayType] = useState<Display>(display);
-	const { data, isLoading } = useCoinsMarketChartByIdQuery(coin.id);
+	const { data } = useCoinsMarketChartByIdQuery(coin.id);
 	const {
-		palette: { primary, secondary },
+		palette: { primary },
 	} = useTheme();
-
-	const time = new Date().getTime();
-
-	//crosshair
-	//zoom
-
-	// const [crosshairValues, setCrosshairValues] = useState()
 
 	if (!data) return null;
 

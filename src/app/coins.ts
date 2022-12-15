@@ -16,20 +16,6 @@ const slice = createSlice({
     name: 'coins',
     initialState: initialState,
     reducers: {
-        addSearchedCoin: (state, action: PayloadAction<SearchCoin>) => {
-            // check if we reached max of 5 coins
-            if (state.currentCoins.length === 5) 
-                throw new Error('Max number of coins reached')
-            
-            state.currentCoins.push(action.payload.id)
-            state.searchedCoins.push(action.payload)
-
-            if (state.searchedCoins.length > 25)
-                state.searchedCoins.shift()
-        },
-        removeSearchedCoin: (state, action: PayloadAction<SearchCoin>) => {
-            state.currentCoins = state.currentCoins.filter(id => id !== action.payload.id)
-        },
         setSearchedCoins: (state, action: PayloadAction<SearchCoin[]>) => {
             if (action.payload.length === 6) throw new Error('Max number of coins reached')
         
@@ -60,5 +46,5 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
     searched.filter(coin => ids.includes(coin.id))
 )
 
-export const { addSearchedCoin, removeSearchedCoin, setSearchedCoins } = slice.actions;
+export const { setSearchedCoins } = slice.actions;
 export default slice.reducer

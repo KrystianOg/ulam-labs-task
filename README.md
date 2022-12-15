@@ -10,11 +10,11 @@ PYTANIE: Zalozyć że MUI czy pure HTML & CSS
 - [x] users can remove the currencies (somewhat)
 - [x] show 24h price chart along with the current price
       <!-- refreshes every 3s -->
-- [ ] show all selected currencies in one view
+- [x] show all selected currencies in one view
       <!-- refreshes every 20s -->
 - [x] the selected currencies should be persistent. Refreshing the page should not reset them
       <!-- redux persist -->
-- [ ] each of the selected currencies should be displayed with a distinct color
+- [x] each of the selected currencies should be displayed with a distinct color
 
 #### 1.2 API
 

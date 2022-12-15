@@ -3,8 +3,6 @@ import { Autocomplete, TextField } from "@mui/material";
 import { useDebounce } from "usehooks-ts";
 import { useLazySearchQuery } from "../../app/api";
 import { setSearchedCoins } from "../../app/coins";
-
-// import { addSearchedCoin, removeSearchedCoin } from "../../app/coins";
 import { SearchCoin } from "../../types";
 import { useSnackbar } from "notistack";
 

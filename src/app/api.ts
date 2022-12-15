@@ -1,6 +1,5 @@
 import { fetchBaseQuery, createApi} from '@reduxjs/toolkit/query/react'
 import type { SearchCoin, MarketChart, ListCoin, TrendingCoin, CoinMarket} from '../types'
-import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from './store';
 
 type TrendingCoinData = {
@@ -37,10 +36,8 @@ const api = createApi({
             query: () => `search/trending`,
             transformResponse: (response:  TrendingCoinData) => response.coins.map(coin => coin.item)
         }),
-        coinsList: build.query<ListCoin[], void>({
-            query: () => `coins/list`
-        }),
         coinsMarkets: build.query<CoinMarket[], string[]>({
+            // for future - refreshing 
             query: (ids) => `coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&ids=${ids.join(',')}`,
         }),
         coinsMarketChartById: build.query<MarketChart, string>({
@@ -52,7 +49,6 @@ const api = createApi({
 export const {
     useLazySearchQuery,
     useSearchTrendingQuery,
-    useCoinsListQuery,
     useLazyCoinsMarketsQuery,
     useCoinsMarketChartByIdQuery
 } = api

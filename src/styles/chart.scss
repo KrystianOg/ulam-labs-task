@@ -1,6 +1,9 @@
 @use './media' as *;
 @use './theme' as *;
 
+.line-stroke {
+    stroke: $primary100;
+}
 .charts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

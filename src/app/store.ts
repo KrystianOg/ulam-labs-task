@@ -26,14 +26,6 @@ export const store = configureStore({
     middleware: [thunk, api.middleware]
 })
 
-// export const store = configureStore({
-//     reducer: {
-//         [api.reducerPath]: api.reducer,
-//     },
-//     devTools: true,
-//     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware)
-// })
-
 setupListeners(store.dispatch)
 
 export const persistor = persistStore(store)

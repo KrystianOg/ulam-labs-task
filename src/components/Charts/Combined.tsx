@@ -3,22 +3,20 @@ import {
 	HorizontalGridLines,
 	LineSeries,
 	VerticalGridLines,
-	XAxis,
 	YAxis,
 } from "react-vis";
 import { selectCurrentCoinsIds } from "../../app/coins";
 import { selectAllCoinsMarketData } from "../../app/api";
 import { useAppSelector } from "../../hooks/useStore";
-import { useState } from "react";
+import { Display } from "../../types";
 
 interface CombinedProps {
-	display?: "prices" | "market_caps" | "total_volumes";
+	display?: Display;
 }
 
 const Combined = ({ display = "prices" }: CombinedProps) => {
 	const ids = useAppSelector(selectCurrentCoinsIds);
 	const coins = useAppSelector(selectAllCoinsMarketData(ids));
-	const [points, setPoints] = useState([]);
 
 	if (ids.length === 0) return null;
 
