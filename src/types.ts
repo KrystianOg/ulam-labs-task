@@ -5,7 +5,7 @@ type Image = {
 }
 
 // output of /search endpoint
-type Coin = {
+type SearchCoin = {
     id: string;
     name: string;
     api_symbol: string;
@@ -13,10 +13,15 @@ type Coin = {
     market_cap_rank: number;
 } & Omit<Image, "small">
 
-
+// output of /search/list
+type ListCoin = {
+    id: string;
+    symbol: string;
+    name: string;
+}
 
 // output of /search/trending endpoint
-type TrendingCoin = Omit<Coin, "api_symbol"> & Image & {
+type TrendingCoin = Omit<SearchCoin, "api_symbol"> & Image & {
     coin_id: number,
     slug: string,
     price_btc: number,
@@ -61,11 +66,16 @@ type MarketChart = {
     prices: number[][];
     market_caps: number[][];
     total_volumes: number[][];
+    id: string;
 }
 
+type Display = "prices" | "market_caps" | "total_volumes";
+
 export type {
-    Coin,
+    SearchCoin,
     CoinMarket,
     TrendingCoin,
     MarketChart,
+    ListCoin,
+    Display
 }

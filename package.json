@@ -3,20 +3,28 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://krystianog.github.io/ulam-labs-task/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.10.16",
-    "@mui/material": "^5.10.17",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "@types/react-vis": "^1.11.11",
+    "notistack": "^2.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-vis": "^1.11.7",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
     "sass": "^1.56.2",
     "usehooks-ts": "^2.9.1"
   },
@@ -24,8 +32,9 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.1"
   },
   "repository": {
     "type": "git",
@@ -36,7 +45,8 @@
     "typescript",
     "vite",
     "mui",
-    "sass"
+    "sass",
+    "redux"
   ],
   "author": "Krystian Ogonowski"
 }

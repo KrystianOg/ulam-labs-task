@@ -54,3 +54,11 @@ nav {
         padding: 0.5rem;
     }
 }
+
+.no-wrap {
+    white-space: nowrap;
+
+    @include respond(mobile) {
+        display: none;
+    }
+}
