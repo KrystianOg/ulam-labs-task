@@ -1,9 +1,6 @@
 # Single-page application
 
 ## 1. Task
-
-PYTANIE: Zalozyć że MUI czy pure HTML & CSS
-
 ### 1.1 Functionalities
 
 - [x] users can select up to 5 currencies (somewhat)
