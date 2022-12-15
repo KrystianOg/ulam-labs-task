@@ -1,0 +1,22 @@
+{
+    "short_name": "Crypto",
+    "name": "Cryptocurrency app",
+    "icons": [
+        {
+            "src": "/icons/logo256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/icons/logo64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/icons/logo32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        }
+    ],
+    "description": "Simple cryptocurrency app"
+}
