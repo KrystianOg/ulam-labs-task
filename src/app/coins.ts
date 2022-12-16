@@ -30,14 +30,14 @@ const slice = createSlice({
             if (coins.length > currentCoins.length || currentCoins === null) {
                 // we have to push new coin
                 currentCoins.push(coins.at(-1)!.id)
-                searchedCoins.push(coins.at(-1)!)
                 const i = searchedCoins.map(c => c.id).indexOf(coins.at(-1)!.id)
 
-                if (i !== -1) searchedCoins.splice(i, 1)
+                if (i !== -1) 
+                    searchedCoins.splice(i, 1)
                 searchedCoins.push(coins.at(-1)!)
-
             } else {
-                // remove non-included coin
+                // remove non-included coins
+                let c =currentCoins.filter(id => coins.map(c => c.id).includes(id))
                 return {
                     currentCoins: currentCoins.filter(id => coins.map(c => c.id).includes(id)),
                     searchedCoins
