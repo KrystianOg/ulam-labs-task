@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://krystianog.github.io/ulam-labs-task/",
+  "homepage": "https://crypto-app.ogonowski.it/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
