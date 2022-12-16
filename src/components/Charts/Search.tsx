@@ -36,10 +36,11 @@ const Search = () => {
 		try {
 			dispatch(setSearchedCoins(coins));
 		} catch (e: any) {
-			enqueueSnackbar(e.message, {
-				variant: "error",
-				autoHideDuration: 3000,
-			});
+			if (e.cause === "Full")
+				enqueueSnackbar(e.message, {
+					variant: "error",
+					autoHideDuration: 3000,
+				});
 		}
 	};
 

@@ -22,13 +22,10 @@ Used endpoints:
 
 - /search
 - /search/trending - display carousel
-- /coins/list
-- /coins/markets - refreshing current price
 - /coins/:id/market_chart - get last 24h price (requires 5 requests for 5 coins)
+- /coins/markets - refreshing current price (saved for future)
 
 ## Deliverables
-
-For the task i chose ReactJS. Project was created using Vite
 
 external libraries installed:
 

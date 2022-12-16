@@ -1,6 +1,6 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../app/store'
-import { SearchCoin } from '../types'
+import { SearchCoin, TrendingCoin } from '../types'
 
 interface CoinsState {
     currentCoins: string[], // where string[] is array of ids
@@ -12,29 +12,45 @@ const initialState = {
     searchedCoins: [] as SearchCoin[]// max size let's say 25
 } as CoinsState
 
+class AddCoinError extends Error {
+    constructor(cause: string) {
+        super('Max number of coins reached')
+        this.name = 'AddCoinError'
+        this.cause=cause
+    }
+}
+
 const slice = createSlice({
     name: 'coins',
     initialState: initialState,
     reducers: {
-        setSearchedCoins: (state, action: PayloadAction<SearchCoin[]>) => {
-            if (action.payload.length === 6) throw new Error('Max number of coins reached')
+        setSearchedCoins: ({currentCoins, searchedCoins}, {payload: coins}: PayloadAction<SearchCoin[]>) => {
+            if (coins.length === 6) throw new AddCoinError("Full")
         
-            if (action.payload.length > state.currentCoins.length || state.currentCoins === null) {
-                // we have to add new coins
-                action.payload.forEach(coin => {
-                    if (!state.currentCoins.includes(coin.id)) {
-                        state.currentCoins.push(coin.id)
-                        state.searchedCoins.push(coin)
-                    }
+            if (coins.length > currentCoins.length || currentCoins === null) {
+                // we have to push new coin
+                currentCoins.push(coins.at(-1)!.id)
+                searchedCoins.push(coins.at(-1)!)
+                const i = searchedCoins.map(c => c.id).indexOf(coins.at(-1)!.id)
 
-                    if (state.searchedCoins.length > 25)
-                        state.searchedCoins.shift()
-                })
+                if (i !== -1) searchedCoins.splice(i, 1)
+                searchedCoins.push(coins.at(-1)!)
+
             } else {
-                // we have to remove coins
-                state.currentCoins = state.currentCoins.filter(id => action.payload.map(coin => coin.id).includes(id))
-                state.searchedCoins = state.searchedCoins.filter(coin => action.payload.map(coin => coin.id).includes(coin.id))
+                // remove non-included coin
+                return {
+                    currentCoins: currentCoins.filter(id => coins.map(c => c.id).includes(id)),
+                    searchedCoins
+                }
             }
+        },
+        addSearchedCoin: ({currentCoins, searchedCoins}, {payload: coin}: PayloadAction<TrendingCoin>) => {
+            if (currentCoins.includes(coin.id)) throw new AddCoinError("Included")
+
+            if (currentCoins.length === 5) throw new AddCoinError("Full")
+
+            currentCoins.push(coin.id)
+            searchedCoins.push(coin)
         }
     }
 })
@@ -46,5 +62,5 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
     searched.filter(coin => ids.includes(coin.id))
 )
 
-export const { setSearchedCoins } = slice.actions;
+export const { addSearchedCoin, setSearchedCoins } = slice.actions;
 export default slice.reducer

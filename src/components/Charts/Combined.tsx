@@ -3,6 +3,7 @@ import {
 	HorizontalGridLines,
 	LineSeries,
 	VerticalGridLines,
+	XAxis,
 	YAxis,
 } from "react-vis";
 import { selectCurrentCoinsIds } from "../../app/coins";
@@ -32,6 +33,7 @@ const Combined = ({ display = "prices" }: CombinedProps) => {
 				<VerticalGridLines />
 				<HorizontalGridLines />
 				<YAxis title="USD" />
+				<XAxis />
 				{coins.map((coin, index) => {
 					if (!coin) return null;
 

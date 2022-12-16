@@ -1,5 +1,5 @@
 import Search from "./Search";
-import Selected from "./Selected";
+import Selected from "./SelectDisplay";
 import { useState } from "react";
 import Chart from ".";
 import type { Display } from "../../types";
@@ -21,7 +21,7 @@ const ChartsContainer = () => {
 				<Selected selected={selected} setSelected={setSelected} />
 				<Combined display={selected} />
 				{coins.map((coin, index) => (
-					<Chart key={index} coin={coin} display="prices" />
+					<Chart key={index} coin={coin} display={selected} />
 				))}
 			</div>
 		</>

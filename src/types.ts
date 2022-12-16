@@ -5,13 +5,12 @@ type Image = {
 }
 
 // output of /search endpoint
-type SearchCoin = {
+type TrendingCoin = {
     id: string;
     name: string;
-    api_symbol: string;
     symbol: string;
     market_cap_rank: number;
-} & Omit<Image, "small">
+} & Image
 
 // output of /search/list
 type ListCoin = {
@@ -21,11 +20,7 @@ type ListCoin = {
 }
 
 // output of /search/trending endpoint
-type TrendingCoin = Omit<SearchCoin, "api_symbol"> & Image & {
-    coin_id: number,
-    slug: string,
-    price_btc: number,
-}
+type SearchCoin = Omit<TrendingCoin, "small">
 
 // output of /coins/markets
 type CoinMarket = {

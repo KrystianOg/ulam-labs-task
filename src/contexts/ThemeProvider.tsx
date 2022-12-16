@@ -57,6 +57,22 @@ const getDesignTokens = (isDarkMode: boolean) => ({
 	shape: {
 		borderRadius: 16,
 	},
+    typography: {
+        fontFamily: "MuseoModerno"
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: `
+            @font-face {
+                font-family: 'MuseoModerno', cursive;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 400;
+                src: url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap');
+              }
+            `
+        }
+    }
 });
 
 type Props = {

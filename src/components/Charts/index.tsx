@@ -19,7 +19,6 @@ interface Props {
 }
 
 const Chart = ({ coin, display = "prices" }: Props) => {
-	const [displayType, setDisplayType] = useState<Display>(display);
 	const { data } = useCoinsMarketChartByIdQuery(coin.id);
 	const {
 		palette: { primary },
@@ -42,7 +41,7 @@ const Chart = ({ coin, display = "prices" }: Props) => {
 				<YAxis title="USD" />
 				<LineSeries
 					color={primary.main}
-					data={data[displayType].map((v) => {
+					data={data[display].map((v) => {
 						return { x: v[0], y: v[1] };
 					})}
 				/>
