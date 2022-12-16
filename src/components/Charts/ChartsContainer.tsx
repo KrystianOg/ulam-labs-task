@@ -1,4 +1,4 @@
-import Search from "./Search";
+import Search from "../Search";
 import Selected from "./SelectDisplay";
 import { useState } from "react";
 import Chart from ".";
