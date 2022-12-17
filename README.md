@@ -1,6 +1,7 @@
 # Single-page application
 
 ## 1. Task
+
 ### 1.1 Functionalities
 
 - [x] users can select up to 5 currencies (somewhat)
@@ -13,7 +14,7 @@
       <!-- redux persist -->
 - [x] each of the selected currencies should be displayed with a distinct color
 
-#### 1.2 API
+### 1.2 API
 
 Used endpoints:
 
@@ -24,7 +25,7 @@ Used endpoints:
 
 ## Deliverables
 
-external libraries installed:
+### External libraries installed
 
 - sass
 - react-redux
@@ -34,4 +35,10 @@ external libraries installed:
 - usehooks-ts
 - notistack
 
-Hosted on githubPages: []()
+### Important update about react-vis
+
+When i started the project I didn't know that react-vis library was deprecated, somehow docs website was working fine. Since ~15.12.2022 the urls are not functional, so didn't finish all planned functionalities such as:
+
+- custom plot line colors
+- actions on line hover
+  I'll be switching to other plotting library soon.
