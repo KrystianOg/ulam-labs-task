@@ -18,7 +18,7 @@ const slice = createSlice({
     initialState: initialState,
     reducers: {
         setSearchedCoins: ({currentCoins, searchedCoins}, {payload: coins}: PayloadAction<SearchCoin[]>) => {
-            if (coins.length === 6) throw new SearchCoinsFullError()
+            if (coins.length >= 6) throw new SearchCoinsFullError()
         
             if (coins.length > currentCoins.length || currentCoins === null) {
                 addWithSearchFilter({currentCoins, searchedCoins}, coins[coins.length - 1])
@@ -34,7 +34,7 @@ const slice = createSlice({
         addSearchedCoin: ({currentCoins, searchedCoins}, {payload: coin}: PayloadAction<TrendingCoin>) => {
             if (currentCoins.includes(coin.id)) throw new SearchCoinExistsError()
 
-            if (currentCoins.length === 5) throw new SearchCoinsFullError()
+            if (currentCoins.length >= 5) throw new SearchCoinsFullError()
 
             addWithSearchFilter({currentCoins, searchedCoins}, coin)
         }

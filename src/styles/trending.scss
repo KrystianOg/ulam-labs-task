@@ -27,15 +27,19 @@
     flex-direction: row;
     list-style: none;
     justify-content: center;
+    border-radius: 0;
     gap: 0.5rem;
     padding: 0.1rem;
-
     overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     @include respond(tablet) {
         width: 100%;
+    }
+
+    @media (max-width: 465px) {
+        justify-content: flex-start;
     }
 
     li {
