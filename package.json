@@ -6,7 +6,7 @@
   "homepage": "https://crypto-app.ogonowski.it/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && echo crypto-app.ogonowski.it > ./dist/CNAME",
     "preview": "vite preview --host",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
