@@ -1,4 +1,5 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { VariantType } from 'notistack';
 import { RootState } from '../app/store'
 import { SearchCoin, TrendingCoin } from '../types'
 
@@ -20,16 +21,9 @@ const slice = createSlice({
             if (coins.length === 6) throw new SearchCoinsFullError()
         
             if (coins.length > currentCoins.length || currentCoins === null) {
-                // we have to push new coin
-                currentCoins.push(coins.at(-1)!.id)
-                const i = searchedCoins.map(c => c.id).indexOf(coins.at(-1)!.id)
-
-                if (i !== -1) 
-                    searchedCoins.splice(i, 1)
-                searchedCoins.push(coins.at(-1)!)
+                addWithSearchFilter({currentCoins, searchedCoins}, coins[coins.length - 1])
             } else {
                 // remove non-included coins
-                let c =currentCoins.filter(id => coins.map(c => c.id).includes(id))
                 return {
                     currentCoins: currentCoins.filter(id => coins.map(c => c.id).includes(id)),
                     searchedCoins
@@ -42,11 +36,19 @@ const slice = createSlice({
 
             if (currentCoins.length === 5) throw new SearchCoinsFullError()
 
-            currentCoins.push(coin.id)
-            searchedCoins.push(coin)
+            addWithSearchFilter({currentCoins, searchedCoins}, coin)
         }
     }
 })
+
+const addWithSearchFilter = ({currentCoins, searchedCoins}: CoinsState, coin: SearchCoin) => {
+    currentCoins.push(coin.id)
+    const i = searchedCoins.map(c => c.id).indexOf(coin.id)
+
+    if (i !== -1) 
+        searchedCoins.splice(i, 1)
+    searchedCoins.push(coin)
+}
 
 const selectCoins = (state: RootState) => state.coins
 export const selectSearchedCoins = createSelector([selectCoins], coins => coins.searchedCoins);
@@ -58,16 +60,37 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
 export const { addSearchedCoin, setSearchedCoins } = slice.actions;
 export default slice.reducer
 
-export class SearchCoinsFullError extends Error {
-    constructor() {
-        super('Max number of coins reached')
+export class CoinError extends Error {
+    // for noti-stack
+    variant: VariantType
+    constructor(message: string) {
+        super(message)
         this.name = this.constructor.name
+        this.variant = "error"
+    }
+
+    // TODO: add typeof enqueueSnackBar
+    enqueueSnackBar = (notiStackEnqueue: any) => {
+        notiStackEnqueue(this.message, {
+            variant: this.variant,
+            autoHideDuration: 3000
+        })
     }
 }
 
-export class SearchCoinExistsError extends Error {
+export class SearchCoinsFullError extends CoinError {
+
+    constructor() {
+        super('Max number of coins reached')
+        this.name = this.constructor.name
+        this.variant = "warning"
+    }
+}
+
+export class SearchCoinExistsError extends CoinError {
     constructor() {
         super('Coin already added')
         this.name = this.constructor.name
+        this.variant = "info"
     }
 }

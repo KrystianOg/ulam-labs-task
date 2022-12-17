@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Autocomplete, TextField } from "@mui/material";
 import { useDebounce } from "usehooks-ts";
 import { useLazySearchQuery } from "../app/api";
-import { setSearchedCoins } from "../app/coins";
+import { SearchCoinsFullError, setSearchedCoins } from "../app/coins";
 import { SearchCoin } from "../types";
 import { useSnackbar } from "notistack";
 
@@ -36,11 +36,7 @@ const Search = () => {
 		try {
 			dispatch(setSearchedCoins(coins));
 		} catch (e: any) {
-			if (e.cause === "Full")
-				enqueueSnackbar(e.message, {
-					variant: "error",
-					autoHideDuration: 3000,
-				});
+			if (e instanceof SearchCoinsFullError) e.enqueueSnackBar(enqueueSnackbar);
 		}
 	};
 
