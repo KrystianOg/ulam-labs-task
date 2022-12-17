@@ -12,20 +12,12 @@ const initialState = {
     searchedCoins: [] as SearchCoin[]// max size let's say 25
 } as CoinsState
 
-class AddCoinError extends Error {
-    constructor(cause: string) {
-        super('Max number of coins reached')
-        this.name = 'AddCoinError'
-        this.cause=cause
-    }
-}
-
 const slice = createSlice({
     name: 'coins',
     initialState: initialState,
     reducers: {
         setSearchedCoins: ({currentCoins, searchedCoins}, {payload: coins}: PayloadAction<SearchCoin[]>) => {
-            if (coins.length === 6) throw new AddCoinError("Full")
+            if (coins.length === 6) throw new SearchCoinsFullError()
         
             if (coins.length > currentCoins.length || currentCoins === null) {
                 // we have to push new coin
@@ -42,12 +34,13 @@ const slice = createSlice({
                     currentCoins: currentCoins.filter(id => coins.map(c => c.id).includes(id)),
                     searchedCoins
                 }
+                
             }
         },
         addSearchedCoin: ({currentCoins, searchedCoins}, {payload: coin}: PayloadAction<TrendingCoin>) => {
-            if (currentCoins.includes(coin.id)) throw new AddCoinError("Included")
+            if (currentCoins.includes(coin.id)) throw new SearchCoinExistsError()
 
-            if (currentCoins.length === 5) throw new AddCoinError("Full")
+            if (currentCoins.length === 5) throw new SearchCoinsFullError()
 
             currentCoins.push(coin.id)
             searchedCoins.push(coin)
@@ -64,3 +57,17 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
 
 export const { addSearchedCoin, setSearchedCoins } = slice.actions;
 export default slice.reducer
+
+export class SearchCoinsFullError extends Error {
+    constructor() {
+        super('Max number of coins reached')
+        this.name = this.constructor.name
+    }
+}
+
+export class SearchCoinExistsError extends Error {
+    constructor() {
+        super('Coin already added')
+        this.name = this.constructor.name
+    }
+}

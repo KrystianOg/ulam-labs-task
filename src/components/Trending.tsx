@@ -1,7 +1,11 @@
 import { useTheme, Tooltip } from "@mui/material";
 import { useSnackbar } from "notistack";
 import { useSearchTrendingQuery } from "../app/api";
-import { addSearchedCoin } from "../app/coins";
+import {
+	addSearchedCoin,
+	SearchCoinExistsError,
+	SearchCoinsFullError,
+} from "../app/coins";
 import { useAppDispatch } from "../hooks/useStore";
 import type { TrendingCoin } from "../types";
 import "../styles/trending.scss";
@@ -15,12 +19,12 @@ const TrendingItem = (trendingCoin: TrendingCoin) => {
 		try {
 			dispatch(addSearchedCoin(trendingCoin));
 		} catch (e: any) {
-			if (e.cause === "Full")
+			if (e instanceof SearchCoinsFullError)
 				enqueueSnackbar(e.message, {
 					variant: "error",
 					autoHideDuration: 3000,
 				});
-			else if (e.cause === "Included")
+			else if (e instanceof SearchCoinExistsError)
 				enqueueSnackbar(e.message, {
 					variant: "info",
 					autoHideDuration: 3000,
