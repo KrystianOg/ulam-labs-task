@@ -1,4 +1,3 @@
-import { PaletteMode } from "@mui/material";
 import {
 	createTheme,
 	ThemeProvider as MuiThemeProvider,

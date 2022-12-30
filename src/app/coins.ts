@@ -1,7 +1,7 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { VariantType } from 'notistack';
-import { RootState } from '../app/store'
-import { SearchCoin, TrendingCoin } from '../types'
+import { RootState } from '@app/store'
+import { SearchCoin, TrendingCoin } from '@types'
+import { SearchCoinsFullError, SearchCoinExistsError } from '@errors'
 
 interface CoinsState {
     currentCoins: string[], // where string[] is array of ids
@@ -59,38 +59,3 @@ export const selectCurrentCoins = createSelector([selectSearchedCoins, selectCur
 
 export const { addSearchedCoin, setSearchedCoins } = slice.actions;
 export default slice.reducer
-
-export class CoinError extends Error {
-    // for noti-stack
-    variant: VariantType
-    constructor(message: string) {
-        super(message)
-        this.name = this.constructor.name
-        this.variant = "error"
-    }
-
-    // TODO: add typeof enqueueSnackBar
-    enqueueSnackBar = (notiStackEnqueue: any) => {
-        notiStackEnqueue(this.message, {
-            variant: this.variant,
-            autoHideDuration: 3000
-        })
-    }
-}
-
-export class SearchCoinsFullError extends CoinError {
-
-    constructor() {
-        super('Max number of coins reached')
-        this.name = this.constructor.name
-        this.variant = "warning"
-    }
-}
-
-export class SearchCoinExistsError extends CoinError {
-    constructor() {
-        super('Coin already added')
-        this.name = this.constructor.name
-        this.variant = "info"
-    }
-}

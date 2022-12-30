@@ -1,30 +1,11 @@
-import { Button, ButtonGroup } from "@mui/material";
-import { Display } from "../../types";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import DisplayButton from "./DisplayButton";
+import { Display } from "@types";
 
 interface SelectDisplayProps {
 	selected: Display;
 	setSelected: (value: Display) => void;
 }
-
-type DisplayButtonProps = {
-	label: string;
-	toSelect: Display;
-} & SelectDisplayProps;
-
-const DisplayButton = ({
-	selected,
-	setSelected,
-	label,
-	toSelect,
-}: DisplayButtonProps) => (
-	<Button
-		variant={selected === toSelect ? "contained" : "outlined"}
-		onClick={() => setSelected(toSelect)}
-		sx={{ fontWeight: "bold" }}
-	>
-		{label}
-	</Button>
-);
 
 const buttons: {
 	label: string;
@@ -51,3 +32,5 @@ const SelectDisplay = ({ selected, setSelected }: SelectDisplayProps) => {
 };
 
 export default SelectDisplay;
+
+export type { SelectDisplayProps };

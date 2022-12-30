@@ -1,5 +1,5 @@
 import ThemeSwitch from "./ThemeSwitch";
-import "../styles/header.scss";
+import "@styles/header.scss";
 
 const Header = () => {
 	return (

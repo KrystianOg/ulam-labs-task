@@ -1,5 +1,5 @@
 import { useDarkMode } from "usehooks-ts";
-import "../styles/theme_switch.scss";
+import "@styles/theme_switch.scss";
 
 const ThemeSwitch = () => {
 	const { isDarkMode, toggle } = useDarkMode(true);

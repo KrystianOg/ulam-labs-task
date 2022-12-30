@@ -1,10 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { persistReducer, persistStore} from 'redux-persist'
-import coinsReducer from './coins'
 import storage from 'redux-persist/lib/storage'
 import thunk from 'redux-thunk'
-
+import coinsReducer from './coins'
 import api from './api'
 
 const rootPersistConfig = {

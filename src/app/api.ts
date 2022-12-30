@@ -1,5 +1,5 @@
 import { fetchBaseQuery, createApi} from '@reduxjs/toolkit/query/react'
-import type { SearchCoin, MarketChart, TrendingCoin, CoinMarket} from '../types'
+import type { SearchCoin, MarketChart, TrendingCoin, CoinMarket} from '@types'
 import { RootState } from './store';
 
 type TrendingCoinData = {

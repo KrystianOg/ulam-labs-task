@@ -1,15 +1,7 @@
-import {
-	FlexibleXYPlot,
-	HorizontalGridLines,
-	LineSeries,
-	VerticalGridLines,
-	XAxis,
-	YAxis,
-} from "react-vis";
-import { selectCurrentCoinsIds } from "../../app/coins";
-import { selectAllCoinsMarketData } from "../../app/api";
-import { useAppSelector } from "../../hooks/useStore";
-import { Display } from "../../types";
+import { selectCurrentCoinsIds } from "@app/coins";
+import { selectAllCoinsMarketData } from "@app/api";
+import { useAppSelector } from "@hooks/useStore";
+import { Display } from "@types";
 
 interface CombinedProps {
 	display?: Display;
@@ -23,7 +15,7 @@ const Combined = ({ display = "prices" }: CombinedProps) => {
 
 	return (
 		<div className="charts-combined">
-			<FlexibleXYPlot
+			{/* <FlexibleXYPlot
 				xType="time"
 				yPadding={25}
 				margin={{
@@ -34,7 +26,7 @@ const Combined = ({ display = "prices" }: CombinedProps) => {
 				<HorizontalGridLines />
 				<YAxis title="USD" />
 				<XAxis />
-				{coins.map((coin, index) => {
+				{coins.map((coin: { [x: string]: any[] }, index: number) => {
 					if (!coin) return null;
 
 					return (
@@ -46,7 +38,7 @@ const Combined = ({ display = "prices" }: CombinedProps) => {
 						/>
 					);
 				})}
-			</FlexibleXYPlot>
+			</FlexibleXYPlot> */}
 		</div>
 	);
 };
